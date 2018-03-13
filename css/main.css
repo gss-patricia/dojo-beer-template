@@ -1,14 +1,17 @@
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
 .has-text-muted {
   color: #95A5A6;
 }
+
 .fa {
-  font-size:10px;
-  padding-top:3px;
+  font-size: 10px;
+  padding-top: 3px;
   color: #95A5A6;
 }
+
 .panel-block-item {
   display: inline-block;
   color: #95A5A6;
@@ -38,9 +41,20 @@ form {
   font-size: 13px;
 }
 
+.section {
+  min-height: 75vh;
+  border-bottom: 1px solid #d3d6db;
+}
+
+.search-container {
+  width: 65%;
+  padding-right: 10px;
+}
+
 /*------------------------------------*
 #LAYOUT DIRECTION
 \*------------------------------------*/
+
 .u-layout-row,
 .u-layout-column {
   box-sizing: border-box;
@@ -48,19 +62,23 @@ form {
   display: -webkit-flex;
   display: flex;
 }
+
 .u-layout-row {
   -webkit-box-orient: horizontal;
   -webkit-flex-direction: row;
   flex-direction: row;
 }
+
 .u-layout-column {
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
 }
+
 /*------------------------------------*
 #CHILD ALIGNMENT
 \*------------------------------------*/
+
 .u-layout-align-center-center,
 .u-layout-align-start-center,
 .u-layout-align-end-center,
@@ -74,32 +92,110 @@ form {
   align-content: center;
   max-width: 100%;
 }
+
 /*-- CENTER CENTER --*/
+
 .u-layout-align-center-center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
+
 /*-- START CENTER --*/
+
 .u-layout-align-start-center {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
+
 /*-- END CENTER --*/
+
 .u-layout-align-end-center {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
+
 /*-- CENTER SPACE-AROUND --*/
+
 .u-layout-align-space-around-center {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
+
 /*-- CENTER SPACE-BETWEEN --*/
+
 .u-layout-align-space-between-center {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+}
+
+.price {
+  font-size: 18px;
+  color: #1fc8db;
+  font-weight: bolder;
+}
+
+.bigger {
+  font-size: 30px;
+}
+
+.sorting {
+  width: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #d3d6db;
+}
+
+.beer-info>h2 {
+  font-size: 36px;
+  color: #1fc8db;
+  font-weight: bolder;
+}
+
+.beer-info>p {
+  text-align: justify;
+}
+
+.beer-info .details {
+  margin-top: 20px;
+}
+
+.beer-info .details label {
+  font-size: 18px;
+  color: #1fc8db;
+  font-weight: bolder;
+}
+
+.beer-info .details span {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.panel {
+  position: relative;
+}
+
+.beer-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.about>h2 {
+  font-size: 36px;
+  color: #1fc8db;
+  font-weight: bolder;
+}
+
+.about p {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: justify;
 }

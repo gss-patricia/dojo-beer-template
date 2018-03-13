@@ -1,305 +1,360 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beer Brain - Dojo</title>
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 0.6.0 -->
     <link rel="stylesheet" href="http://html.mijnspeelplek.com/bulma1/css/bulma.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
+
 <body>
-<nav class="nav has-shadow" id="top">
-    <div class="container">
-        <div class="nav-left">
-            <a class="nav-item" href="../index.html">
-                <img src="./images/beer-logo.jpeg" alt="Description">
-            </a>
-        </div>
-        <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-        <div class="column u-layout-row u-layout-align-center-center search-container">
-            <form action="" method="POST" accept-charset="utf-8">
-                <div class="field is-grouped u-layout-row u-layout-align-center-center">
-                    <div class="control has-icons-left is-expanded search-field">
-                        <input type="email" value="" name="email" class="input is-flat required email" placeholder="Encontre sua cerveja" required="">
-                    </div>
-                    <div class="control submit">
-                        <div class="is-hidden">
-                            <input type="text" name="hp" id="hp">
+    <nav class="nav has-shadow" id="top">
+        <div class="container">
+            <div class="nav-left">
+                <a class="nav-item" href="../index.html">
+                    <img src="./images/beer-logo.jpeg" alt="Description">
+                </a>
+            </div>
+            <div class="u-layout-row u-layout-align-center-center search-container">
+                <form action="" method="POST" accept-charset="utf-8">
+                    <div class="field is-grouped u-layout-row u-layout-align-center-center">
+                        <div class="control has-icons-left is-expanded search-field">
+                            <input type="email" value="" name="email" class="input is-flat required email" placeholder="Encontre sua cerveja" required="">
                         </div>
-                        <input type="hidden" name="list" value="">
-                        <input type="submit" value="Pesquisar" name="submit" id="search" class="button is-info is-outlined">
+                        <div class="control submit">
+                            <div class="is-hidden">
+                                <input type="text" name="hp" id="hp">
+                            </div>
+                            <input type="hidden" name="list" value="">
+                            <input type="submit" value="Pesquisar" name="submit" id="search" class="button is-info is-outlined">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="nav-right nav-menu">
+                <a class="nav-item is-tab is-active" href="/template.html">
+                    Home
+                </a>
+                <a class="nav-item is-tab" href="/about.html">
+                    Sobre
+                </a
+            </div>
+        </div>
+    </nav>
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8">
+                    <div class="title">Cevas das boas</div>
+                </div>
+                <div class="column is-4 has-text-right">
+                    <select class="sorting">
+                        <option>Preço</option>
+                        <option>Nome</option>
+                        <option>Estilo</option>
+                        <option>Volume</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="//s3-ap-southeast-1.amazonaws.com/media.redmart.com/newmedia/1600x/i/m/5000264010574_0143_1448859828420.jpg">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column is-7">
+                                    <div class="panel-block-item">Bhrama Bhrama</div>
+                                </div>
+                                <div class="column is-5 has-text-right">
+                                    <div class="panel-block-item">
+                                        <span class="price">R$ 70,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="nav-right nav-menu">
-            <a class="nav-item is-tab is-active">
-                Home
-            </a>
-            <span class="nav-item">
-          <a class="button">
-            Log in
-          </a>
-          <a class="button is-info">
-            Sign up
-          </a>
-        </span>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="http://loja.cervejariacontainer.com.br/103-large_default/cerveja-back-sheep.jpg">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://http2.mlstatic.com/cerveja-nortena-960ml-nortena-D_NQ_NP_784239-MLB26520275399_122017-F.jpg">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://static.wmobjects.com.br/imgres/arquivos/ids/5844746-344-344/.jpg">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://clubedomalte.fbitsstatic.net/img/p/wells-banana-bread-500ml-65975/232862.jpg?w=460&h=460&v=201802152337">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://cdn.awsli.com.br/600x450/14/14719/produto/26006016/faf8dd657e.jpg">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="//www.cash.asiantradesrl.info/image/thumbnails/18/98/singha_630ml__png-100746-380x380.png">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://placehold.it/300x300">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://placehold.it/300x300">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://placehold.it/300x300">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://placehold.it/300x300">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="panel">
+                        <a class="beer-link" href="/beer.html"></a>
+                        <p class="is-marginless">
+                            <img src="https://placehold.it/300x300">
+                        </p>
+                        <div class="panel-block">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="panel-block-item">2 views</div>
+                                </div>
+                                <div class="column has-text-right">
+                                    <div class="panel-block-item">2
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="panel-block-item">2d
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
-<div class="section">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-8">
-                <div class="title">Cevas das boas</div>
-            </div>
-            <div class="column is-4 has-text-right">
-                <a class="button is-active"><i class="fa fa-th title is-5"></i></a>
-                <a class="button"><i class="fa fa-align-justify title is-5"></i></a>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Beer Brain Dojo</strong> by us Front-ends.
+                    <i class="fa fa-heart is-colored-p"></i>
+                </p>
             </div>
         </div>
-        <hr>
-        <div class="columns">
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="//s3-ap-southeast-1.amazonaws.com/media.redmart.com/newmedia/1600x/i/m/5000264010574_0143_1448859828420.jpg">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="http://loja.cervejariacontainer.com.br/103-large_default/cerveja-back-sheep.jpg">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://http2.mlstatic.com/cerveja-nortena-960ml-nortena-D_NQ_NP_784239-MLB26520275399_122017-F.jpg">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://static.wmobjects.com.br/imgres/arquivos/ids/5844746-344-344/.jpg">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://clubedomalte.fbitsstatic.net/img/p/wells-banana-bread-500ml-65975/232862.jpg?w=460&h=460&v=201802152337">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://cdn.awsli.com.br/600x450/14/14719/produto/26006016/faf8dd657e.jpg">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="//www.cash.asiantradesrl.info/image/thumbnails/18/98/singha_630ml__png-100746-380x380.png">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://placehold.it/300x300">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://placehold.it/300x300">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://placehold.it/300x300">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://placehold.it/300x300">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="panel">
-                    <p class="is-marginless">
-                        <img src="https://placehold.it/300x300">
-                    </p>
-                    <div class="panel-block">
-                        <div class="columns">
-                            <div class="column">
-                                <div class="panel-block-item">2 views</div>
-                            </div>
-                            <div class="column has-text-right">
-                                <div class="panel-block-item">2 <i class="fa fa-heart"></i></div>
-                                <div class="panel-block-item">2d <i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Beer Brain Dojo</strong> by us Front-ends. <i class="fa fa-heart is-colored-p"></i>
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
